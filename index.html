@@ -6,11 +6,11 @@
     <title>Documentación</title>
     <style>
       body {
-        font-family: Arial;
+        font-family: Arial,sans-serif;
         text-align: center;
-        backgorund: #FF00AA;
-        color: #006AFF;
-        transition: backgorund 0,3s;
+        background: #FF00AA;
+        color: #21FF81;
+        transition: background 0,3s;
       }
       button {
         padding: 12px 18px;
@@ -34,6 +34,27 @@
     </style>
   </head>
   <body>
-    <h1> Hifumi tomando el control :3</h1>
-  </body>
+    <h1> Hifumi~ a tomando el control 🌸</h1>
+    <p> Hifumi está contenta :3</p>
+
+    <h2> Contador de clicks</h2>
+    <p id="contador">0</p>
+    <button  onclick ="Sumar()">¡Sumar!</button>  
+    <button onclick="Reiniciar()">¡Reiniciar!</button>  
+
+<script>
+  let clicks = 0;
+  function sumar(){
+  clicks++;
+    document.getElementById("contador").textContent = clicks;
+  }
+
+  function reiniciar(){
+  clicks = 0;
+    document.getElementById("contador").textContent = clicks;
+  }
+  
+</script>
+    
+</body>
 </html>
